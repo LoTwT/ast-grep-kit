@@ -1,0 +1,80 @@
+{
+  "name": "ast-grep-kit",
+  "version": "0.0.0",
+  "description": "ast-grep-kit",
+  "type": "module",
+  "packageManager": "pnpm@8.15.5",
+  "author": "LoTwT <l709937065@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/LoTwT/ast-grep-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoTwT/ast-grep-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LoTwT/ast-grep-kit/issues"
+  },
+  "keywords": [
+    "ast-grep",
+    "ast-grep-kit"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm build",
+    "prettier": "prettier --write .",
+    "release": "bumpp && pnpm publish",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "up": "taze latest -I -f",
+    "watch": "tsup --watch"
+  },
+  "devDependencies": {
+    "@ayingott/eslint-config": "^0.8.3",
+    "@ayingott/prettier-config": "^0.2.2",
+    "@types/node": "^20.11.30",
+    "bumpp": "^9.4.0",
+    "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
+    "pnpm": "^8.15.5",
+    "prettier": "^3.2.5",
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^0.13.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3",
+    "unplugin-auto-import": "^0.17.5",
+    "vitest": "^1.4.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged",
+    "pre-push": "pnpm run test run"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "prettier": "@ayingott/prettier-config"
+}
