@@ -78,25 +78,8 @@ export function walkImportDeclaration(
         isType = s.text().startsWith("type ")
       }
 
-      const nameSpecifier = s.find({
-        rule: {
-          kind: "identifier",
-          inside: {
-            kind: "import_specifier",
-            field: "name",
-          },
-        },
-      })!
-
-      const aliasSpecifier = s.find({
-        rule: {
-          kind: "identifier",
-          inside: {
-            kind: "import_specifier",
-            field: "alias",
-          },
-        },
-      })
+      const nameSpecifier = s.field("name")!
+      const aliasSpecifier = s.field("alias")
 
       bindings.push({
         imported: nameSpecifier.text(),
