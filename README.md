@@ -1,31 +1,17 @@
-# ast-grep-kit
+# ast-grep-kit [![npm](https://img.shields.io/npm/v/ast-grep-kit.svg)](https://npmjs.com/package/ast-grep-kit)
 
-A starter template for TypeScript library with Github Actions.
+A toolkit for easy AST search and analyze using [ast-grep](https://github.com/ast-grep/ast-grep).
 
-## builtin plugins
+## Install
 
-- [pnpm](https://github.com/pnpm/pnpm) - expected packageManager
-- [unbuild](https://github.com/unjs/unbuild) - bundler
-- [vitest](https://github.com/vitest-dev/vitest) - test framwork
-- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - auto import vitest
-  <br />
-- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
-- [prettier](https://github.com/prettier/prettier)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [bumpp](https://github.com/antfu/bumpp) - packge version control
+```bash
+pnpm add ast-grep-kit
+```
 
-## alternative plugins
+## Thanks
 
-You can choose one or some of following plugins to install to this repo:
-
-- [defu](https://github.com/unjs/defu) - Assign default properties, recursively.
-- [untyped](https://github.com/unjs/untyped) - Generate types and markdown from a config object.
-- [consola](https://github.com/unjs/consola) - Elegant Console Logger for Node.js and Browser
-- [zx](https://github.com/google/zx) - A tool for writing better scripts
-
-## use
-
-Please replace `ast-grep-kit` to your target package name, change author and repo infos to yours in `package.json`. Also replace the copyright in `LICENSE`.
+- [ast-grep](https://github.com/ast-grep/ast-grep)
+- [ast-kit](https://github.com/sxzz/ast-kit)
 
 ## License
 
