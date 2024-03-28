@@ -50,6 +50,9 @@
     "up": "taze latest -I -f",
     "watch": "tsup --watch"
   },
+  "dependencies": {
+    "@ast-grep/napi": "^0.20.1"
+  },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.8.3",
     "@ayingott/prettier-config": "^0.2.2",

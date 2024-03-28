@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@ast-grep/napi':
+    specifier: ^0.20.1
+    version: 0.20.1
+
 devDependencies:
   '@ayingott/eslint-config':
     specifier: ^0.8.3
@@ -63,6 +68,92 @@ packages:
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: true
+
+  /@ast-grep/napi-darwin-arm64@0.20.1:
+    resolution: {integrity: sha512-+RYbghtq4spoN4uemKGF14dPctosw1MPiTQ6NkW1laU3yH+bxc7PQsBQoiauNmMyc+9ZACK2D11nKiJN/SU2lQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-darwin-x64@0.20.1:
+    resolution: {integrity: sha512-rL3kLl9JFga8tKFE6VTIzk5eEqFIFVLxyB6Ea9QDhinsuCLwFTcCBexKaH2U17YdjRmELXEMHz+dsayQ5W7ZAA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-linux-arm64-gnu@0.20.1:
+    resolution: {integrity: sha512-AIg+2F7cyc57C6RQodIKtKtSaRWRCb0TySfA40ptaTXwP0yypefPLzUBT4MmtvONURf+fD35UBVPTcHvrzNsxg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-linux-x64-gnu@0.20.1:
+    resolution: {integrity: sha512-6THzwmMQnASzMu2WgKihFY6oKxejR+Y3iZ1s3NJIhnw1IemjpVShUC8iXKm0m7dQK+PGW5SpWWqAB2miGddxQA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-linux-x64-musl@0.20.1:
+    resolution: {integrity: sha512-CK+F1ITmKsDjLKvNlj96kNi6PrC9/3hghU67uO58RCFK/LVXCQZ6pH0+gLRXaEtocJuxL3ywEjFPk7fFzU2zlg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-win32-arm64-msvc@0.20.1:
+    resolution: {integrity: sha512-PJBqZAjR3WZTai7Oba7U/D3bTVuO4UuE5lPrwP39She1ZzdNKOdFGKl7xuyag1qSOkSNIykZaDI1fGNN1r7w+A==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-win32-ia32-msvc@0.20.1:
+    resolution: {integrity: sha512-GK+yhJ/639aTWWtMVGquYWesS0UYRWKkokBRFZzbRFIhkqLCdM84Yf/KVU2WfeuGabonvQi+lkCEKnTRhD0iRw==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi-win32-x64-msvc@0.20.1:
+    resolution: {integrity: sha512-WJkSroTzGJ2nWlb5MNiD0gsGyLMkSMSO0Yigk/ml1KgDgT7i8XLHgqLTKCQlVCTxlJOz0wtBT5rvaPMwHA1Ovg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@ast-grep/napi@0.20.1:
+    resolution: {integrity: sha512-IdX2dmFPTYKw7UPfa8YKt5Jb1uyYYr9qyLWyaqVvgqs8XLPvPHJoDJb0fHfiknnOW0GmNhc9Qv2ADJ3cUEsMhQ==}
+    engines: {node: '>= 10'}
+    optionalDependencies:
+      '@ast-grep/napi-darwin-arm64': 0.20.1
+      '@ast-grep/napi-darwin-x64': 0.20.1
+      '@ast-grep/napi-linux-arm64-gnu': 0.20.1
+      '@ast-grep/napi-linux-x64-gnu': 0.20.1
+      '@ast-grep/napi-linux-x64-musl': 0.20.1
+      '@ast-grep/napi-win32-arm64-msvc': 0.20.1
+      '@ast-grep/napi-win32-ia32-msvc': 0.20.1
+      '@ast-grep/napi-win32-x64-msvc': 0.20.1
+    dev: false
 
   /@ayingott/eslint-config-basic@0.8.3(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.4.3):
     resolution: {integrity: sha512-78QU7jec0Xk8iNBPPlqCzGQDviY6jhKqWrAtG5OMasnsaxHRYei/lLUX407G6AhqGYQFwcEaTqqKGuJ5uQ4yIQ==}

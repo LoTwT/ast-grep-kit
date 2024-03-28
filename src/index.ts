@@ -1,1 +1,3 @@
-export const one = 1
+export * from "@ast-grep/napi"
+
+export * from "./parse"
