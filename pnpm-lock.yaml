@@ -8,6 +8,9 @@ dependencies:
   '@ast-grep/napi':
     specifier: ^0.20.1
     version: 0.20.1
+  '@ayingott/sucrose':
+    specifier: ^0.0.37
+    version: 0.0.37
 
 devDependencies:
   '@ayingott/eslint-config':
@@ -313,7 +316,6 @@ packages:
     dependencies:
       dotenv: 16.4.5
       dotenv-expand: 11.0.6
-    dev: true
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -2087,12 +2089,10 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       dotenv: 16.4.5
-    dev: true
 
   /dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
-    dev: true
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}

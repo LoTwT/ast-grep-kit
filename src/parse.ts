@@ -1,4 +1,5 @@
 import { css, html, js, jsx, ts, tsx } from "@ast-grep/napi"
+import type { AGLang } from "./types/shared"
 
 const LangMap = {
   html,
@@ -7,9 +8,9 @@ const LangMap = {
   jsx,
   ts,
   tsx,
-} as const
+}
 
-export function sgParse(code: string, lang: keyof typeof LangMap = "ts") {
+export function sgParse(code: string, lang: AGLang = "ts") {
   const instance = LangMap[lang]
   return instance.parse(code).root()
 }

@@ -52,7 +52,8 @@
     "watch": "tsup --watch"
   },
   "dependencies": {
-    "@ast-grep/napi": "^0.20.1"
+    "@ast-grep/napi": "^0.20.1",
+    "@ayingott/sucrose": "^0.0.37"
   },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.8.3",
