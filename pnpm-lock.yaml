@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@ast-grep/napi':
-    specifier: ^0.20.1
-    version: 0.20.1
+    specifier: ^0.20.2
+    version: 0.20.2
   '@ayingott/sucrose':
     specifier: ^0.0.37
     version: 0.0.37
@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^11.0.4
     version: 11.0.4
   '@types/node':
-    specifier: ^20.11.30
-    version: 20.11.30
+    specifier: ^20.12.3
+    version: 20.12.3
   bumpp:
     specifier: ^9.4.0
     version: 9.4.0
@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^15.2.2
     version: 15.2.2
   pnpm:
-    specifier: ^8.15.5
-    version: 8.15.5
+    specifier: ^8.15.6
+    version: 8.15.6
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -75,7 +75,7 @@ devDependencies:
     version: 0.17.5
   vitest:
     specifier: ^1.4.0
-    version: 1.4.0(@types/node@20.11.30)
+    version: 1.4.0(@types/node@20.12.3)
 
 packages:
 
@@ -93,8 +93,8 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: true
 
-  /@ast-grep/napi-darwin-arm64@0.20.1:
-    resolution: {integrity: sha512-+RYbghtq4spoN4uemKGF14dPctosw1MPiTQ6NkW1laU3yH+bxc7PQsBQoiauNmMyc+9ZACK2D11nKiJN/SU2lQ==}
+  /@ast-grep/napi-darwin-arm64@0.20.2:
+    resolution: {integrity: sha512-0LD1MttlTL2gh2yvjiMFnZICgTvAqihxeHgVM6djBvoYl9U0goV6G9EZ6p1MOSGvWURS0sRhZiKu5pQe7QF8aw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -102,8 +102,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-darwin-x64@0.20.1:
-    resolution: {integrity: sha512-rL3kLl9JFga8tKFE6VTIzk5eEqFIFVLxyB6Ea9QDhinsuCLwFTcCBexKaH2U17YdjRmELXEMHz+dsayQ5W7ZAA==}
+  /@ast-grep/napi-darwin-x64@0.20.2:
+    resolution: {integrity: sha512-4NHR8lKSM3i7CILszhRPmEq66BKgzmX06T9mU18Z4LO++eN/4vZE3HubMeJaQE2fLW7VRIdyQBrG+dv70lq/7Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -111,8 +111,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-linux-arm64-gnu@0.20.1:
-    resolution: {integrity: sha512-AIg+2F7cyc57C6RQodIKtKtSaRWRCb0TySfA40ptaTXwP0yypefPLzUBT4MmtvONURf+fD35UBVPTcHvrzNsxg==}
+  /@ast-grep/napi-linux-arm64-gnu@0.20.2:
+    resolution: {integrity: sha512-GC/sF7AgCNhz0pA4/ThivRVKPtd2YWsmVniNqoOaCTm/6zXqNEN1dpgyTKUnRU+mBVAEZe01hjZIwJTl81l5lw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -120,8 +120,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-linux-x64-gnu@0.20.1:
-    resolution: {integrity: sha512-6THzwmMQnASzMu2WgKihFY6oKxejR+Y3iZ1s3NJIhnw1IemjpVShUC8iXKm0m7dQK+PGW5SpWWqAB2miGddxQA==}
+  /@ast-grep/napi-linux-x64-gnu@0.20.2:
+    resolution: {integrity: sha512-V2sYHwaTuLZ0EIRsdVfWBOy14Zz4UH7iIQCrICJVMjSg6NTxmM2ySbSiIg8zIIbshVqINHhoHEt1wZBam7n8qg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -129,8 +129,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-linux-x64-musl@0.20.1:
-    resolution: {integrity: sha512-CK+F1ITmKsDjLKvNlj96kNi6PrC9/3hghU67uO58RCFK/LVXCQZ6pH0+gLRXaEtocJuxL3ywEjFPk7fFzU2zlg==}
+  /@ast-grep/napi-linux-x64-musl@0.20.2:
+    resolution: {integrity: sha512-7SdExC86Fhac+9MHzF9OhybWtuZH+5V+GZ4vIVQWbxIFh51X+9pY+m6imPEkTRa7MxKp/W/IAvaA9ew2xCIdFA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -138,8 +138,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-win32-arm64-msvc@0.20.1:
-    resolution: {integrity: sha512-PJBqZAjR3WZTai7Oba7U/D3bTVuO4UuE5lPrwP39She1ZzdNKOdFGKl7xuyag1qSOkSNIykZaDI1fGNN1r7w+A==}
+  /@ast-grep/napi-win32-arm64-msvc@0.20.2:
+    resolution: {integrity: sha512-TgB9liJ86y/De4AzXegu93U24BEecHUfoCTRQYPlmohBY06KuU21WELv/e1VFRpb8pT5DKXOV6BAeJTDC1avuw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -147,8 +147,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-win32-ia32-msvc@0.20.1:
-    resolution: {integrity: sha512-GK+yhJ/639aTWWtMVGquYWesS0UYRWKkokBRFZzbRFIhkqLCdM84Yf/KVU2WfeuGabonvQi+lkCEKnTRhD0iRw==}
+  /@ast-grep/napi-win32-ia32-msvc@0.20.2:
+    resolution: {integrity: sha512-Gmkg01xNKyFiqQszJ3B8kDkyamSKgvlNqdM7vaNas0mzw/v/CSoVNv/XNN6QWSh1Y0OiiWMrQefn3pmTgqeiNA==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -156,8 +156,8 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi-win32-x64-msvc@0.20.1:
-    resolution: {integrity: sha512-WJkSroTzGJ2nWlb5MNiD0gsGyLMkSMSO0Yigk/ml1KgDgT7i8XLHgqLTKCQlVCTxlJOz0wtBT5rvaPMwHA1Ovg==}
+  /@ast-grep/napi-win32-x64-msvc@0.20.2:
+    resolution: {integrity: sha512-rbKXPaViH9x/MfxGAvJC1wm9+OEkbzkRl/gCmCQOxuFutv868pFJDhST6vU18e0+sbT7JOk6jA8ziUiSjxzaWA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -165,18 +165,18 @@ packages:
     dev: false
     optional: true
 
-  /@ast-grep/napi@0.20.1:
-    resolution: {integrity: sha512-IdX2dmFPTYKw7UPfa8YKt5Jb1uyYYr9qyLWyaqVvgqs8XLPvPHJoDJb0fHfiknnOW0GmNhc9Qv2ADJ3cUEsMhQ==}
+  /@ast-grep/napi@0.20.2:
+    resolution: {integrity: sha512-hB+BtwCJVch532PBx98bgzgiyZR3cH7rrbQFb1OMjSijIseEK/gGrvZkM/93B1CVOw9wHivD/5Dz9loPhiLGFQ==}
     engines: {node: '>= 10'}
     optionalDependencies:
-      '@ast-grep/napi-darwin-arm64': 0.20.1
-      '@ast-grep/napi-darwin-x64': 0.20.1
-      '@ast-grep/napi-linux-arm64-gnu': 0.20.1
-      '@ast-grep/napi-linux-x64-gnu': 0.20.1
-      '@ast-grep/napi-linux-x64-musl': 0.20.1
-      '@ast-grep/napi-win32-arm64-msvc': 0.20.1
-      '@ast-grep/napi-win32-ia32-msvc': 0.20.1
-      '@ast-grep/napi-win32-x64-msvc': 0.20.1
+      '@ast-grep/napi-darwin-arm64': 0.20.2
+      '@ast-grep/napi-darwin-x64': 0.20.2
+      '@ast-grep/napi-linux-arm64-gnu': 0.20.2
+      '@ast-grep/napi-linux-x64-gnu': 0.20.2
+      '@ast-grep/napi-linux-x64-musl': 0.20.2
+      '@ast-grep/napi-win32-arm64-msvc': 0.20.2
+      '@ast-grep/napi-win32-ia32-msvc': 0.20.2
+      '@ast-grep/napi-win32-x64-msvc': 0.20.2
     dev: false
 
   /@ayingott/eslint-config-basic@0.8.3(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.4.3):
@@ -1043,7 +1043,7 @@ packages:
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.11.30
+      '@types/node': 20.12.3
     dev: true
 
   /@types/json-schema@7.0.15:
@@ -1053,7 +1053,7 @@ packages:
   /@types/jsonfile@6.1.4:
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.3
     dev: true
 
   /@types/mdast@3.0.15:
@@ -1062,8 +1062,8 @@ packages:
       '@types/unist': 2.0.10
     dev: true
 
-  /@types/node@20.11.30:
-    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+  /@types/node@20.12.3:
+    resolution: {integrity: sha512-sD+ia2ubTeWrOu+YMF+MTAB7E+O7qsMqAbMfW7DG3K1URwhZ5hN1pLlRVGbf4wDFzSfikL05M17EyorS86jShw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -4496,8 +4496,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.15.5:
-    resolution: {integrity: sha512-sFGjLH5pWDO4SSbTspuMylclS1ifBknYmcbp0O22cLkex+KkNFm65zdZu1zmGcMmbxFr+THOItHvF1mn5Fqpbw==}
+  /pnpm@8.15.6:
+    resolution: {integrity: sha512-d7iem+d6Kwatj0A6Gcrl4il29hAj+YrTI9XDAZSVjrwC7gpq5dE+5FT2E05OjK8poF8LGg4dKxe8prah8RWfhg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
@@ -5754,7 +5754,7 @@ packages:
       builtins: 5.0.1
     dev: true
 
-  /vite-node@1.4.0(@types/node@20.11.30):
+  /vite-node@1.4.0(@types/node@20.12.3):
     resolution: {integrity: sha512-VZDAseqjrHgNd4Kh8icYHWzTKSCZMhia7GyHfhtzLW33fZlG9SwsB6CEhgyVOWkJfJ2pFLrp/Gj1FSfAiqH9Lw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5763,7 +5763,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.0.10(@types/node@20.11.30)
+      vite: 5.0.10(@types/node@20.12.3)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5775,7 +5775,7 @@ packages:
       - terser
     dev: true
 
-  /vite@5.0.10(@types/node@20.11.30):
+  /vite@5.0.10(@types/node@20.12.3):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5803,7 +5803,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.3
       esbuild: 0.19.10
       postcss: 8.4.32
       rollup: 4.9.1
@@ -5811,7 +5811,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.4.0(@types/node@20.11.30):
+  /vitest@1.4.0(@types/node@20.12.3):
     resolution: {integrity: sha512-gujzn0g7fmwf83/WzrDTnncZt2UiXP41mHuFYFrdwaLRVQ6JYQEiME2IfEjU3vcFL3VKa75XhI3lFgn+hfVsQw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5836,7 +5836,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.3
       '@vitest/expect': 1.4.0
       '@vitest/runner': 1.4.0
       '@vitest/snapshot': 1.4.0
@@ -5854,8 +5854,8 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.2
-      vite: 5.0.10(@types/node@20.11.30)
-      vite-node: 1.4.0(@types/node@20.11.30)
+      vite: 5.0.10(@types/node@20.12.3)
+      vite-node: 1.4.0(@types/node@20.12.3)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less

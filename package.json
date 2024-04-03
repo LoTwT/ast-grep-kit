@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ast-grep-kit",
   "type": "module",
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/ast-grep-kit#readme",
@@ -52,19 +52,19 @@
     "watch": "tsup --watch"
   },
   "dependencies": {
-    "@ast-grep/napi": "^0.20.1",
+    "@ast-grep/napi": "^0.20.2",
     "@ayingott/sucrose": "^0.0.37"
   },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.8.3",
     "@ayingott/prettier-config": "^0.2.2",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.3",
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
     "fs-extra": "^11.2.0",
     "lint-staged": "^15.2.2",
-    "pnpm": "^8.15.5",
+    "pnpm": "^8.15.6",
     "prettier": "^3.2.5",
     "simple-git-hooks": "^2.11.1",
     "taze": "^0.13.3",
