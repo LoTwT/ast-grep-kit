@@ -26,7 +26,7 @@ export function isTypeOf<L extends AGLang = "ts">(
  */
 export function isCallOf(
   node: Nullable<Undefinedable<SgNode>>,
-  test: string | string[] | ((id: string) => boolean),
+  test: Arrayable<string> | ((id: string) => boolean),
 ) {
   if (!node || node.kind() !== "call_expression") return false
 
@@ -39,5 +39,25 @@ export function isCallOf(
       : Array.isArray(test)
         ? test.includes(functionFieldText)
         : test(functionFieldText))
+  )
+}
+
+/**
+ * Checks if the given node is an identifier with the specified name.
+ *
+ * @param node - The node to check.
+ * @param test - The name to compare against. It can be a string or an array of strings.
+ * @returns True if the node is an identifier with the specified name, false otherwise.
+ */
+export function isIdentifierOf(
+  node: Nullable<Undefinedable<SgNode>>,
+  test: Arrayable<string>,
+) {
+  return (
+    !!node &&
+    node.kind() === "identifier" &&
+    (typeof test === "string"
+      ? node.text() === test
+      : test.includes(node.text()))
   )
 }
