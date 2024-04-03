@@ -6,6 +6,12 @@ export interface ImportBinding {
   isType: boolean
 }
 
+/**
+ * Walks through an ImportDeclaration node and populates the provided imports object.
+ *
+ * @param imports - The object to store the import bindings.
+ * @param node - The ImportDeclaration node to walk through.
+ */
 export function walkImportDeclaration(
   imports: Record<string, ImportBinding[]>,
   node: SgNode,
