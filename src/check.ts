@@ -16,3 +16,28 @@ export function isTypeOf<L extends AGLang = "ts">(
   types = Array.isArray(types) ? types : [types]
   return !!node && types.includes(node.kind() as any)
 }
+
+/**
+ * Checks if the given node is a call_expression with the specified callee.
+ *
+ * @param node - The node to check.
+ * @param test - The callee to compare against. It can be a string, an array of strings, or a function that takes a string and returns a boolean.
+ * @returns True if the node is a call_expression with the specified callee, false otherwise.
+ */
+export function isCallOf(
+  node: Nullable<Undefinedable<SgNode>>,
+  test: string | string[] | ((id: string) => boolean),
+) {
+  if (!node || node.kind() !== "call_expression") return false
+
+  const functionFieldText = node.field("function")?.text()
+
+  return (
+    !!functionFieldText &&
+    (typeof test === "string"
+      ? functionFieldText === test
+      : Array.isArray(test)
+        ? test.includes(functionFieldText)
+        : test(functionFieldText))
+  )
+}
